@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
   <head>
     <meta charset="utf-8">
+    <title>Каталог</title>
   </head>
   <body>
-    <header class="catalog-header">
+    <header class="main-header">
       <nav class="main-navigation">
         <a class="header-logo" href="#">
           <img class="logo" alt="Логотип магазина мороженого Глейси" src="#">
@@ -15,7 +15,7 @@
           <li class="navigation-item">
             <a class="catalog-dropdown" href="#">
                 Каталог
-                <img class="catalog-dropdown__arrow" src="#">
+                <img class="catalog-dropdown__arrow" src="#" alt="Раскрыть каталог">
             </a>
           </li>
           <li class="navigation-item">
@@ -33,18 +33,18 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="button-search" href="#">
-                <img class="button-search-img" src="#">
+                <img class="button-search-img" src="#" alt="Поиск">
             </a>
           </li>
           <li class="navigation-item">
             <a class="button-entry button-user" href="#">
-                <img class="button-entry-img" src="#">
+                <img class="button-entry-img" src="#" alt="Вход">
                 Вход
             </a>
           </li>
           <li class="navigation-item">
             <a class="button-basket button-user" href="#">
-                <img class="button-basket-img" src="#">
+                <img class="button-basket-img" src="#" alt="Корзина">
                 <span class="basket-value">2 Товара</span>
             </a>
           </li>
@@ -213,7 +213,7 @@
             </a>
             <h3 class="ice-cream-title">Ментол</h3>
             <p>Сливочный пломбир с ментоловым сиропом</p>
-            <span>320 ₽/кг/span>
+            <span>320 ₽/кг</span>
             <a  class="button-small-busket">
               <span class="vissualy-hidden">В корзину</span>
             </a>
@@ -243,12 +243,83 @@
         </ul>
         <div class="ice-cream-section-controls">
           <a class="main-button" href="#">Показать еще</a>
-          <ul>
-            <li></li>
-          </ul>
+          <div class="pagination">
+            <a class="pagination-button previous-page"></a>
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+            </ul>
+            <a class="pagination-button next-page"></a>
+          </div>
         </div>
     </section>
-  </body>
+    <footer class="main-footer">
+      <div class="socials">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <img src="#" alt="Телеграмм">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link">
+              <img src="#" alt="Вконтакте">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link">
+              <img src="#" alt="Ютуб">
+            </a>
+          </li>
+        </ul>
+      </div>
 
-</head>
+
+      <div class="footer-link">
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a class="footer-link" href="#">
+              <img src="#" alt="Сердце">
+              <b>Для поставщиков</b>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a class="footer-link" href="#">
+              Наши документы
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a class="footer-link" href="#">
+              О производстве
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a class="footer-link" href="#">
+              Экологические стандарты
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <a class="logo-link" href="#">
+          <img alt="Логотип" src="#">
+        </a>
+        <span>Сделано в <a href="#" class="footer-hmlacademy-link">html academy ©</a> 2021</span>
+      </div>
+    </footer>
+  </body>
 </html>
