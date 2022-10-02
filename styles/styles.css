@@ -27,18 +27,29 @@ body {
  color: #2D3440;
 }
 .main-button{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
   color:#2D3440;
   text-decoration: none;
-
+}
+.button-red{
+  background-color:#FF2F64;
 }
 .secondary-title{
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
 }
+.placeholder{
+  font-family: 'Inter',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+ }
 
 .main-header {
   line-height: 20px;
@@ -70,9 +81,35 @@ body {
 .gifts{
   text-align: center;
 }
-
 .gift-item-title{
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
+}
+
+.popular-item-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.popular-item-price{
+ font-size: 20px;
+ line-height: 24px;
+ font-weight: 700;
+}
+
+.new-in-blog-title{
+  line-height: 20px;
+}
+
+.new-in-blog-post-title{
+ font-size: 24px;
+ line-height: 30px;
+ font-weight: 700;
+}
+
+
+.delivery-form-container label{
+  line-height: 20px;
   font-weight: 700;
 }

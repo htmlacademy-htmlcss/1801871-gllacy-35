@@ -188,7 +188,7 @@
       </section>
 
       <section class="popular-product">
-        <h2 class="popular-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <h2 class="popular-title secondary-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
         <ul class="popular-product-list">
           <li class="popular-product-item">
             <a class="popular-product-item-link">
@@ -197,7 +197,7 @@
             </a>
             <h3 class="popular-item-title">Малинка</h3>
             <p>Сливочное мороженое с малиновым джемом</p>
-            <span>310 ₽/кг</span>
+            <span class="popular-item-price">310 ₽/кг</span>
             <a  class="button-small-busket">
               <span class="vissualy-hidden">В корзину</span>
               <img src="/images/element/cart.svg" class="popular-product-item-order-img" alt>
@@ -210,7 +210,7 @@
             </a>
             <h3 class="popular-item-title">Фисташка</h3>
             <p>Фисташковый пломбир с кусочками шоколада</p>
-            <span>340 ₽/кг</span>
+            <span class="popular-item-price">340 ₽/кг</span>
             <a  class="button-small-busket">
               <span class="vissualy-hidden">В корзину</span>
               <img src="/images/element/cart.svg" class="popular-product-item-order-img" alt>
@@ -223,7 +223,7 @@
             </a>
             <h3 class="popular-item-title">Черника</h3>
             <p>Крем-брюле с черничным джемом</p>
-            <span>330 ₽/кг</span>
+            <span class="popular-item-price">330 ₽/кг</span>
             <a  class="button-small-busket">
               <span class="vissualy-hidden">В корзину</span>
               <img src="/images/element/cart.svg" class="popular-product-item-order-img" alt>
@@ -236,7 +236,7 @@
             </a>
             <h3 class="popular-item-title">Бабл-гам</h3>
             <p>Ванильный пломбир со сладкой посыпкой</p>
-            <span>320 ₽/кг</span>
+            <span popular-item-price>320 ₽/кг</span>
             <a  class="button-small-busket">
               <span class="vissualy-hidden">В корзину</span>
               <img src="/images/element/cart.svg" class="popular-product-item-order-img" alt>
@@ -282,8 +282,10 @@
             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form action="#" method="post">
-            <input type="email" name="email">
-            <input type="submit" class="button-red" value="Отправить">
+            <input type="email" name="email" class="placeholder" placeholder="email@example.com">
+            <button type="submit" class="main-button button-red" >
+              <span class="main-button">Отправить</span>
+            </button>
           </form>
         </section>
       </div>
@@ -297,15 +299,15 @@
             <label for="delivery-date">Дата</label>
             <a class="delivery-help-link" href="#">
               <img class="delivery-help-img" src="/images/element/info.svg" alt="Подсказка"></a>
-            <input type="date" name="delivery-date" id="delivery-date">
+            <input type="date" name="delivery-date" id="delivery-date" class="placeholder" placeholder="01.04.2020">
 
             <label for="telephone">Телефон</label>
-            <input id="telephone" type="tel" name="delivery-telephone">
+            <input id="telephone" type="tel" name="delivery-telephone" class="placeholder" placeholder="+7 800 999-00-00">
 
             <label for="delivery-address">Адрес</label>
             <a class="delivery-help-link" href="#">
               <img class="delivery-help-img" src="/images/element/info.svg" alt="Подсказка"></a>
-            <input id="delivery-address" type="text" name="delivery-address">
+            <input id="delivery-address" type="text" name="delivery-address" class="placeholder" placeholder="ул. Большая Конюшенная, 19/8">
 
             <input type="submit" class="button-red">
           </form>
