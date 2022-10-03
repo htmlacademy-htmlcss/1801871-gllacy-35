@@ -81,12 +81,20 @@ body {
 .gifts{
   text-align: center;
 }
+
+.gift-item{
+ background-color: #FF7799;
+}
 .gift-item-title{
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
 
+
+.popular-product-item{
+  background-color: #FCFCFC;
+}
 .popular-item-title{
   font-size: 20px;
   line-height: 24px;
@@ -98,16 +106,39 @@ body {
  font-weight: 700;
 }
 
-.new-in-blog-title{
-  line-height: 20px;
+.about-us{
+  background-image: url("/images/background/background-about-us-pattern.jpg");
 }
 
+.new-in-blog{
+  background-image: url("/images/background/background-news.jpg");
+  background-repeat: no-repeat;
+}
+.new-in-blog-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
 .new-in-blog-post-title{
  font-size: 24px;
  line-height: 30px;
  font-weight: 700;
 }
+.subscribe-form{
+  background-image: url("/images/background/background-subscribe.jpg");
+  background-repeat: no-repeat;
+}
 
+
+.delivery{
+  background-image: url("/images/background/background-delivery.jpg");
+  background-repeat: no-repeat;
+}
+
+.contact{
+  background-image: url(/images/background/background-contacts.jpg);
+  background-repeat: no-repeat;
+}
 
 .delivery-form-container label{
   line-height: 20px;
