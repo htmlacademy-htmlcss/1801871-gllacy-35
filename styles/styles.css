@@ -38,7 +38,7 @@ body {
 .button-red{
   background-color:#FF2F64;
 }
-.secondary-title{
+.decoration{
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -112,4 +112,64 @@ body {
 .delivery-form-container label{
   line-height: 20px;
   font-weight: 700;
+}
+.address{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+telephone-number{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.telephone-section-work-time{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.footer-link-list{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.fotter-link-special{
+  font-weight: 700;
+}
+.copyright-text{
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+
+
+
+
+.breadcrumbs{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.icecream-filter{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.ice-cream-title{
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.ice-cream-price{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.pagination-list{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
 }
