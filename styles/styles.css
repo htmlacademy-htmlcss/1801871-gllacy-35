@@ -6,17 +6,17 @@
 }
 @font-face {
   font-family: "Inter";
-  src: url(../fonts/inter-700.woff2) format("woff2");;
+  src: url(../fonts/inter-700.woff2) format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url(../fonts/inter-900.woff2) format("woff2");;
+  src: url(../fonts/inter-900.woff2) format("woff2");
   font-weight: 900;
   font-display: swap;
 }
-
+/* Общиен стили для одинаковых элементов */
 body {
  font-family: "Inter", sans-serif;
  font-size: 16px;
@@ -26,181 +26,64 @@ body {
  background-color: #FEAFC3;
  color: #2D3440;
 }
-.main-button{
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  color:#2D3440;
-  text-decoration: none;
-}
-.button-red{
-  background-color:#FF2F64;
-}
-.decoration{
+.large-text-decoration{
+  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  font-weight: 900;
+
+  text-align: center;
 }
-.placeholder{
-  font-family: 'Inter',sans-serif;
-  font-style: normal;
-  font-weight: 400;
+.medium-text-decoration{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.main-button-text-decoration{
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
- }
+}
+.button-red{
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
 
-.main-header {
+
+/* Хедер */
+.main-header{
+  font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
 }
 .main-header-telephone{
   font-weight: 700;
 }
-.user-navigation {
-  font-size: 14px;
+.main-header a{
+  color:inherit;
+  text-decoration: none;
 }
- .main-header a{
+.button-user{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Слайдер */
+.offer-slide-title{
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+.offer-slider-text-content{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.offer-slider a{
   color:inherit;
   text-decoration: none;
 }
 
-
-.offer-slide-title{
-  font-size: 36px;
-  line-height: 46px;
-  font-weight: 900;
-}
-.offer-slider-text-content{
-  font-size: 18px;
-  line-height: 24px;
-}
-
-
-.gifts{
-  text-align: center;
-}
-
-.gift-item{
- background-color: #FF7799;
-}
-.gift-item-title{
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-}
-
-
-.popular-product-item{
-  background-color: #FCFCFC;
-}
-.popular-item-title{
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-}
-.popular-item-price{
- font-size: 20px;
- line-height: 24px;
- font-weight: 700;
-}
-
-.about-us{
-  background-image: url("/images/background/background-about-us-pattern.jpg");
-}
-
-.new-in-blog{
-  background-image: url("/images/background/background-news.jpg");
-  background-repeat: no-repeat;
-}
-.new-in-blog-title{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-}
-.new-in-blog-post-title{
- font-size: 24px;
- line-height: 30px;
- font-weight: 700;
-}
-.subscribe-form{
-  background-image: url("/images/background/background-subscribe.jpg");
-  background-repeat: no-repeat;
-}
-
-
-.delivery{
-  background-image: url("/images/background/background-delivery.jpg");
-  background-repeat: no-repeat;
-}
-
-.contact{
-  background-image: url(/images/background/background-contacts.jpg);
-  background-repeat: no-repeat;
-}
-
-.delivery-form-container label{
-  line-height: 20px;
-  font-weight: 700;
-}
-.address{
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-}
-telephone-number{
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-}
-.telephone-section-work-time{
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-}
-.footer-link-list{
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-}
-.fotter-link-special{
-  font-weight: 700;
-}
-.copyright-text{
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-}
-
-
-
-
-
-.breadcrumbs{
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-}
-.icecream-filter{
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-}
-.ice-cream-title{
-
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-}
-.ice-cream-price{
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.pagination-list{
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
+/* Подарки */
+.gifts a{
+  color:inherit;
+  text-decoration: none;
 }
