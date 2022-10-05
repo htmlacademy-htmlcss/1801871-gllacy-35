@@ -16,6 +16,7 @@
   font-weight: 900;
   font-display: swap;
 }
+
 /* Общиен стили для одинаковых элементов */
 body {
  font-family: "Inter", sans-serif;
@@ -38,6 +39,12 @@ body {
   font-size: 24px;
   line-height: 30px;
 }
+.small-text-decoration{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .main-button-text-decoration{
   font-weight: 700;
   font-size: 16px;
@@ -48,6 +55,11 @@ body {
   background-color: #FF2F64;
 }
 
+.placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 /* Хедер */
 .main-header{
@@ -86,4 +98,65 @@ body {
 .gifts a{
   color:inherit;
   text-decoration: none;
+}
+
+/* Популярные продукты */
+
+/* О нас */
+
+/* Новое в блоге и и форма подписаться */
+.new-in-blog-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Доставка на дом  */
+.delivery-form-container label{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Контакты */
+.address-section-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.telephone-section-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.telephone-section-work-time{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.contact a{
+  color:inherit;
+  text-decoration: none;
+}
+
+/* Футер */
+.main-footer a{
+  color:inherit;
+  text-decoration: none;
+}
+
+
+.footer-link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.fotter-link-special{
+  font-weight: 700;
+}
+
+.copyright-text{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
