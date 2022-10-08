@@ -162,3 +162,37 @@ body {
 }
 
 /* Каталог */
+
+/* Хлебные крошки */
+.breadcrumbs{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.breadcrumbs a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Фильтр  */
+.icecream-filter{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.sort-submite-button{
+  font-size: 14px;
+}
+
+.ice-cream-section-controls{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ice-cream-section-controls-button-show-more{
+  font-weight: 700;
+}
+.ice-cream-section a{
+  color:inherit;
+  text-decoration: none;
+}
