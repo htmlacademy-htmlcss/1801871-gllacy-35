@@ -100,11 +100,22 @@ body {
   text-decoration: none;
 }
 
+.gift-item{
+  background-color: #FF7799;
+}
+
 /* Популярные продукты */
 
 /* О нас */
+.about-us{
+  background-image: url("../images/background/background-about-us-pattern.jpg");
 
+}
 /* Новое в блоге и и форма подписаться */
+.new-in-blog{
+ background-image: url("../images/background/background-news.jpg");
+ background-repeat: no-repeat;
+}
 .new-in-blog-title{
   font-weight: 400;
   font-size: 16px;
