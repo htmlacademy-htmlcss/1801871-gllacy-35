@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/inter-400.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/inter-700.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/inter-900.woff2) format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
+
+/* Общиен стили для одинаковых элементов */
+body {
+ font-family: "Inter", sans-serif;
+ font-size: 16px;
+ line-height: 22px;
+ font-style: normal;
+ font-weight: 400;
+ background-color: #FEAFC3;
+ color: #2D3440;
+}
+.large-text-decoration{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+
+  text-align: center;
+}
+.medium-text-decoration{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.small-text-decoration{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.main-button-text-decoration{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.button-red{
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+.placeholder{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Хедер */
+.main-header{
+  font-size: 16px;
+  line-height: 20px;
+}
+.main-header-telephone{
+  font-weight: 700;
+}
+.main-header a{
+  color:inherit;
+  text-decoration: none;
+}
+.button-user{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Слайдер */
+.offer-slide-title{
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+.offer-slider-text-content{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.offer-slider a{
+  color:inherit;
+  text-decoration: none;
+}
+
+/* Подарки */
+.gifts a{
+  color:inherit;
+  text-decoration: none;
+}
+
+.gift-item{
+  background-color: #FF7799;
+}
+
+/* Популярные продукты */
+
+/* О нас */
+.about-us{
+  background-image: url("../images/background/background-about-us-pattern.jpg");
+
+}
+/* Новое в блоге и и форма подписаться */
+.new-in-blog{
+ background-image: url("../images/background/background-news.jpg");
+ background-repeat: no-repeat;
+}
+.new-in-blog-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Доставка на дом  */
+.delivery-form-container label{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Контакты */
+.address-section-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.telephone-section-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.telephone-section-work-time{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.contact a{
+  color:inherit;
+  text-decoration: none;
+}
+
+/* Футер */
+.main-footer a{
+  color:inherit;
+  text-decoration: none;
+}
+
+
+.footer-link{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.fotter-link-special{
+  font-weight: 700;
+}
+
+.copyright-text{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Каталог */
+
+/* Хлебные крошки */
+.breadcrumbs{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.breadcrumbs a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Фильтр  */
+.icecream-filter{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.sort-submite-button{
+  font-size: 14px;
+}
+
+.ice-cream-section-controls{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ice-cream-section-controls-button-show-more{
+  font-weight: 700;
+}
+.ice-cream-section a{
+  color:inherit;
+  text-decoration: none;
+}
