@@ -9,51 +9,53 @@
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="header-logo" href="#">
-          <img class="logo" alt="Логотип магазина мороженого Глейси" src="images/element/logo.svg"
-          width="137" height="56">
-        </a>
+      <div class="navigation-wrapper">
+        <nav class="main-navigation">
+              <a class="header-logo" href="#">
+                <img class="logo" alt="Логотип магазина мороженого Глейси" src="images/element/logo.svg"
+                width="137" height="56">
+              </a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="catalog-dropdown" href="catalog.html">
+                  Каталог
+                  <img class="catalog-dropdown__arrow" src="images/element/Arrow-down.svg" alt>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">Доставка и оплата</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">О компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-navigation-telephone-wrapper">
+          <a class="main-header-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="catalog-dropdown" href="catalog.html">
-                Каталог
-                <img class="catalog-dropdown__arrow" src="images/element/Arrow-down.svg" alt>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">Доставка и оплата</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">О компании</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a class="main-header-telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-      <nav class="user-navigation">
-        <ul class="user-navigation-list">
-          <li class="user-navigation-item">
-            <a class="button-search" href="#">
-                <img class="button-search-img" src="images/element/nav-search.svg" alt="Поиск">
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button-entry button-user" href="#">
-                <img class="button-entry-img" src="#" alt>
-                Вход
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button-basket button-user" href="#">
-                <img class="button-basket-img" src="images/element/cart.svg" alt="Корзина">
-                <span class="basket-value">2 Товара</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+          <nav class="user-navigation">
+            <ul class="user-navigation-list">
+              <li class="user-navigation-item">
+                <a class="button-search" href="#">
+                    <img class="button-search-img" src="images/element/nav-search.svg" alt="Поиск">
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="button-entry button-user" href="#">
+                    <img class="button-entry-img" src="#" alt>
+                    Вход
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="button-basket button-user" href="#">
+                    <img class="button-basket-img" src="images/element/cart.svg" alt="Корзина">
+                    <span class="basket-value">2 Товара</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
 
