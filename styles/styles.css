@@ -157,21 +157,63 @@ html{
 }
 
 /* Слайдер */
+.offer-slider ul{
+  list-style: none;
+}
+
 .offer-slide-title{
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+
+  margin-left:70px;
 }
 .offer-slider-text-content{
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+
+  margin-left:70px;
 }
 .offer-slider a{
   color:inherit;
   text-decoration: none;
 }
+.offer-slides{
+  margin:0;
+  padding:0;
+}
 
+.offer-slide-button{
+  margin-left:70px;
+}
+.offer-slide{
+  display:flex;
+
+}
+.offer-slide-img-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width:630px;
+}
+.offer-slide-text-container{
+  width:540px;
+}
+.offer-slider-navigation-dots-social-container{
+  display:flex;
+  justify-content: space-between;
+}
+.offer-slider-navigation-dots-list{
+  display: flex;
+}
+/* социальные сети */
+.social-list{
+  display: flex;
+}
+.social-item{
+  margin-left:16px;
+}
 /* Подарки */
 .gifts a{
   color:inherit;
