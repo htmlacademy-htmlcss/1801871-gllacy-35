@@ -103,17 +103,12 @@ html{
 .navigation-wrapper{
   width:1170px;
   margin: 0 auto;
-
-
   display:flex;
-  justify-content:space-between;
 }
 /* Позиционируем элементы первой навигации */
 .main-navigation{
-  width: 575px;
-
+  width: 635px;
   display:flex;
-  justify-content: flex-start;
 }
 .header-logo{
   margin-left:0;
@@ -122,8 +117,8 @@ html{
 .navigation-list{
   display:flex;
   align-items: center;
-  justify-content: flex-start;
 
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding:0;
@@ -137,7 +132,11 @@ html{
   display:flex;
   width:460px;
   align-items: center;
+  margin-right: 0;
+  margin-left:auto;
   justify-content: flex-end;
+  flex-wrap: wrap;
+
 }
 .main-header-telephone{
   margin-left: 16px;
@@ -145,11 +144,10 @@ html{
 }
 .user-navigation-list{
   display: flex;
-  justify-content: flex-end;
-
   list-style: none;
   margin: 0;
   padding:0;
+  flex-wrap: wrap;
 }
 .user-navigation-item{
   margin-left:16px;
@@ -157,23 +155,23 @@ html{
 }
 
 /* Слайдер */
+/* Микросетики на гридах */
 .offer-slider ul{
   list-style: none;
+}
+.offer-slider{
+  padding-left:70px;
 }
 
 .offer-slide-title{
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-
-  margin-left:70px;
 }
 .offer-slider-text-content{
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-
-  margin-left:70px;
 }
 .offer-slider a{
   color:inherit;
@@ -228,12 +226,15 @@ html{
   margin:0;
   padding:0;
   list-style:none;
+  flex-wrap: wrap;
 }
 .gift-item{
   background-color: #FF7799;
   width:570px;
+  padding:36px;
+  box-sizing: border-box;
 }
-.gift-item:first-child{
+.gift-item:nth-child(odd){
   margin-right:30px;
 }
 
@@ -243,11 +244,17 @@ html{
   list-style: none;
   margin:0;
   padding:0;
+  flex-wrap: wrap;
 }
 .popular-product-item{
   width:270px;
+  margin-right: 30px;
+}
+.popular-product-item:last-child{
+  margin-right: 0;
 }
 /* О нас */
+/* микросетки на гридах */
 .about-us{
   background-image: url("../images/background/background-about-us-pattern.jpg");
   padding-top:1px;
@@ -275,11 +282,15 @@ html{
   display: flex;
   justify-content: space-between;
 }
+.new-in-blog a{
+  color:inherit;
+  text-decoration: none;
+}
 .new-in-blog{
  background-image: url("../images/background/background-news.jpg");
  background-repeat: no-repeat;
  width: 570px;
- height: 224px;
+ min-height: 224px;
 }
 .new-in-blog-title{
   font-weight: 400;
@@ -289,13 +300,13 @@ html{
 .subscribe-form{
   width: 570px;
   background-image: url("../images/background/background-subscribe.jpg");
-  height: 224px;
+  min-height: 224px;
 
 }
 .subscribe-form-wrapper{
   background-color: #ffffff;
   margin:6px;
-  height:212px;
+  min-height:212px;
 
 }
 
@@ -306,7 +317,10 @@ html{
 .delivery{
   display:flex;
   background-image: url(../images/background/background-delivery.jpg);
-  gap:135px;
+  padding-left: 100px;
+  padding-right: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 .delivery-form-container label{
   font-weight: 700;
@@ -314,30 +328,31 @@ html{
   line-height: 20px;
 }
 .delivery-text-container{
-  margin-left:100px;
+ margin-right:150px;
 }
 .delivery-form-container{
   min-width: 500px;
-  height: 406px;
+  min-height: 406px;
   background-color: #FCFCFC;
-  margin-right:64px;
-  margin-top:64px;
-  margin-bottom: 64px;;
 }
 /* Контакты */
 .contact{
   background-image: url('../images/background/background-contacts.jpg');
-  height: 492px;
-  padding-top:1px;
+  background-repeat: no-repeat;
+  min-height: 492px;
+  padding:64px;
+  box-sizing: border-box;
 }
 
 .contact-container{
   width:343px;
-  height:364px;
+  min-height:364px;
   background-color: #FCFCFC;
-  margin:64px;
+  box-sizing: border-box;
 }
-
+.contact-title{
+  margin:0;
+}
 .address-section-title{
   font-weight: 400;
   font-size: 16px;
@@ -367,7 +382,6 @@ html{
 .footer-wrapper{
   width:1170px;
   margin: 0 auto;
-
   display:flex;
 }
 .socials-footer{
@@ -375,14 +389,19 @@ html{
 }
 .copyright{
   margin-right:14px;
+  width:193px;
 }
 
 .footer-link{
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin-right: 200px;
   margin-left:auto;
-  margin-right:auto;
+  width:356px;
+  display:flex;
+  flex-wrap: wrap;
+
 }
 .fotter-link-special{
   font-weight: 700;
