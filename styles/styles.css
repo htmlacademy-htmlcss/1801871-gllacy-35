@@ -98,6 +98,7 @@ html {
   margin: 0 auto;
 }
 
+
 /* Хедер */
 .main-header {
   font-size: 16px;
@@ -189,6 +190,7 @@ html {
 
 .offer-slider {
   padding-left: 70px;
+  margin-bottom: 80px;
 }
 
 .offer-slide-title {
@@ -256,9 +258,13 @@ html {
 }
 
 /* Подарки */
+
 .gifts a {
   color: inherit;
   text-decoration: none;
+}
+.gifts-title{
+  margin:0 auto 55px;
 }
 
 .gift-list {
@@ -273,13 +279,21 @@ html {
   background-color: #FF7799;
   width: 570px;
   padding: 36px;
+  padding-right: 0;
   box-sizing: border-box;
-}
 
+  display: flex;
+
+}
+.gift-item-link{
+  margin-left:auto;
+}
 .gift-item:nth-child(odd) {
   margin-right: 30px;
 }
-
+.gifts{
+  margin-bottom: 80px;
+}
 /* Популярные продукты */
 .popular-product-list {
   display: flex;
@@ -292,18 +306,30 @@ html {
 .popular-product-item {
   width: 270px;
   margin-right: 30px;
+  text-align: center;
 }
 
 .popular-product-item:last-child {
   margin-right: 0;
 }
-
+.popular-item-title{
+  margin-top:16px;
+  margin-bottom: 8px;
+}
+.popular-item-description{
+  margin:0;
+  margin-bottom: 16px;
+}
+.popular-product{
+  margin-bottom: 80px;
+}
 /* О нас */
 /* микросетки на гридах */
 .about-us {
   background-image: url("../images/background/background-about-us-pattern.jpg");
   padding-top: 1px;
   padding-bottom: 1px;
+  margin-bottom: 80px;
 }
 
 .about-us-wrapper {
@@ -329,7 +355,7 @@ html {
 /* Новое в блоге и и форма подписаться */
 .new-in-blog-subscribe-form-container {
   display: flex;
-  justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .new-in-blog a {
@@ -342,6 +368,7 @@ html {
   background-repeat: no-repeat;
   width: 570px;
   min-height: 224px;
+  margin-right: 30px;
 }
 
 .new-in-blog-title {
@@ -354,7 +381,7 @@ html {
   width: 570px;
   background-image: url("../images/background/background-subscribe.jpg");
   min-height: 224px;
-
+  margin-right: 0;
 }
 
 .subscribe-form-wrapper {
@@ -376,6 +403,7 @@ html {
   padding-right: 64px;
   padding-top: 64px;
   padding-bottom: 64px;
+  margin-bottom: 80px;
 }
 
 .delivery-form-container label {
@@ -447,27 +475,27 @@ html {
   width: 1170px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  padding-bottom: 57px;
 }
 
 .socials-footer {
   margin-left: 4px;
+  margin-right: auto;
 }
 
 .copyright {
   margin-right: 14px;
-  width: 193px;
+  margin-left: auto;
 }
 
 .footer-link {
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-right: 200px;
-  margin-left: auto;
-  width: 356px;
-  display: flex;
-  flex-wrap: wrap;
-
+  width:360px;
 }
 
 .fotter-link-special {
@@ -476,14 +504,21 @@ html {
 
 .footer-link-list {
   list-style: none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex-wrap: wrap;
 }
 
 .copyright-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-}
 
+}
+.logo-link{
+  display: block;
+}
 /* Каталог */
 
 /* Хлебные крошки */
@@ -491,6 +526,8 @@ html {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs a {
@@ -500,15 +537,17 @@ html {
 
 .breadcrumbs-list {
   display: flex;
-  justify-content: flex-start;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
+.breadcrumbs-item{
+  margin-right: 28px;
+}
 /* Заголовок в каталоге */
 .catalog-main-title {
   margin: 0;
+  margin-bottom: 40px;
   text-align: left;
 }
 
@@ -517,6 +556,7 @@ html {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 44px;
 }
 
 .sort-submite-button {
@@ -559,4 +599,7 @@ html {
 .pagination-list {
   display: flex;
   list-style: none;
+}
+.ice-cream-section{
+  margin-bottom: 40px;
 }
