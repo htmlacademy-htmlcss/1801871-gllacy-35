@@ -27,7 +27,7 @@ body {
   line-height: 22px;
   font-style: normal;
   font-weight: 400;
-  /* background-color: #FEAFC3; */
+  background-color: #FEAFC3;
 
   color: #2D3440;
 
@@ -310,6 +310,7 @@ html {
   display:flex;
   flex-direction: column;
   text-align: center;
+  flex-grow: 1;
 }
 
 .popular-item-title{
@@ -322,7 +323,11 @@ html {
   display:flex;
   justify-content: space-between;
 }
-
+.popular-product-item{
+  display:flex;
+  flex-direction: column;
+  background-color: #FCFCFC;
+}
 .popular-product{
   margin-bottom: 80px;
 }
@@ -405,9 +410,11 @@ html {
 .delivery {
   display: flex;
   background-image: url(../images/background/background-delivery.jpg);
-  padding: 100px 100px 100px 64px;
+  padding: 64px 64px 64px 100px;
   margin-bottom: 80px;
-  align-items: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
 }
 
 .delivery-form-container label {
@@ -418,6 +425,7 @@ html {
 
 .delivery-text-container {
   margin-right: 150px;
+  align-self:center;
 }
 .delivery-title{
   margin:0;
@@ -430,6 +438,9 @@ html {
 .delivery-form-container {
   min-width: 500px;
   background-color: #FCFCFC;
+  min-height: 406px;
+  padding:40px;
+  box-sizing: border-box;
 }
 
 /* Контакты */
@@ -446,28 +457,38 @@ html {
   min-height: 364px;
   background-color: #FCFCFC;
   box-sizing: border-box;
+  padding:40px;
 }
 
-.contact-title {
-  margin: 0;
-}
+
 
 .address-section-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  margin:0;
+  margin-bottom: 12px;
+}
+.address{
+  margin-bottom:24px;
 }
 
 .telephone-section-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  margin:0;
+  margin-bottom:12px;
 }
-
+.telephone-number{
+  margin:0;
+}
 .telephone-section-work-time {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin:0;
+  margin-bottom:32px;
 }
 
 .contact a {
@@ -485,7 +506,6 @@ html {
   width: 1170px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
   padding-top: 48px;
   padding-bottom: 57px;
 }
@@ -494,18 +514,18 @@ html {
   margin-left: 4px;
   margin-right: auto;
 }
-
+.social-item:first-child {
+  margin-left:0;
+}
 .copyright {
   margin-right: 14px;
   margin-left: auto;
 }
 
 .footer-link {
-
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  width:360px;
 }
 
 .fotter-link-special {
@@ -516,8 +536,10 @@ html {
   list-style: none;
   margin:0;
   padding:0;
-  display:flex;
-  flex-wrap: wrap;
+  display:grid;
+  grid-template-columns: max-content max-content;
+  row-gap: 8px;
+  column-gap: 24px;
 }
 
 .copyright-text {
@@ -580,6 +602,7 @@ html {
   line-height: 20px;
 
   display: flex;
+  align-items: center;
 }
 
 .ice-cream-section-controls-button-show-more {
@@ -594,16 +617,43 @@ html {
 }
 
 .ice-cream-list {
-  display: flex;
+  display: grid;
   list-style: none;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  row-gap: 40px;
+  margin-bottom: 16px;;
 }
 
-.ice-cream-item {
-  width: 270px;
+.ice-cream-item{
+  display:flex;
+  flex-direction: column;
+  background-color: #FCFCFC;
+}
+
+.ice-cream-item-link{
+  display:block;
+}
+.ice-cream-item-text-container{
+  padding:0 40px 24px 40px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.ice-cream-item-title{
+  margin:0 0 8px 0;
+}
+.ice-cream-item-description{
+  margin: 0 0 16px 0;
+}
+.ice-cream-item-price-button-container{
+  display:flex;
+  justify-content: space-between;
+  margin-top:auto;
 }
 
 .pagination-list {
