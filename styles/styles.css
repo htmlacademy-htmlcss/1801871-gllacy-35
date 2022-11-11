@@ -631,6 +631,7 @@ html {
 }
 .popular-product-item-link{
   display:block;
+  margin-bottom: 16px;
 }
 .popular-product-item-text-container{
   padding:0 40px 24px 40px;
@@ -653,10 +654,60 @@ html {
 .popular-product-item{
   display:flex;
   flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+.popular-product-item::after{
+  content:'';
+  position: absolute;
+  bottom:0;
+  height:281px;
+  width:270px;
   background-color: #FCFCFC;
+  z-index: -1;
+  border-radius: 8px;
+}
+.popular-product-item-link-img{
+  display: block;
+  margin:0 auto;
+  border-radius: 50%;
 }
 .popular-product{
   margin-bottom: 80px;
+}
+.button-small-busket-img{
+  display: block;
+  fill:#FCFCFC;
+  margin:9px auto;
+}
+.button-small-busket{
+  width:32px;
+  height:32px;
+  background-color: #FF2F64;
+  border-radius: 26px;
+}
+.button-small-busket:hover{
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid rgba(255, 47, 100, 1);
+}
+.button-small-busket:hover .button-small-busket-img{
+  fill:#2D3440;
+}
+.button-small-busket:active{
+  background-color: rgba(255, 203, 216, 1);
+  outline: 2px solid rgba(255, 47, 100, 1);
+}
+.button-small-busket:focus{
+  outline: 2px solid rgba(45, 52, 64, 1);
+}
+.button-small-busket:focus .button-small-busket-img{
+  fill:#FCFCFC;
+}
+.button-small-busket[disabled]{
+  background-color: #B9B9B9;
+}
+.button-small-busket[disabled] .button-small-busket-img{
+  fill:rgba(0, 0, 0, 1)
 }
 /* О нас */
 /* микросетки на гридах */
@@ -667,6 +718,7 @@ html {
 }
 .about-us-title{
   margin:0;
+  margin-bottom: 56px;
 }
 .about-us-wrapper {
   background-color: #ffffff;
@@ -680,11 +732,43 @@ html {
   margin: 0;
   column-gap:  32px;
   row-gap: 40px;
+  padding:0;
+
 }
 .about-us-list p{
   margin:0;
 }
-
+.about-us-item{
+  position: relative;
+  padding-left:64px;
+}
+.about-us-item::before{
+   content:"";
+   display: block;
+   width:48px;
+   height:48px;
+   border: 2px solid #2D3440;
+   box-sizing: border-box;
+   position: absolute;
+   border-radius: 50%;
+   left: 0;
+   top:0;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 32px 32px;
+}
+.about-us-item.ice-cream-about-us::before{
+  background-image:url(../images/element/about-us-ice-cream.svg);
+}
+.about-us-item.cow-about-us-img::before{
+  background-image: url(../images/element/about-us-cow.svg);
+}
+.about-us-item.leaf-about-us-img::before{
+  background-image: url(../images/element/about-us-leaf.svg);
+}
+.about-us-item.thermometer-about-us-img::before{
+  background-image: url(../images/element/about-us-thermometer.svg);
+}
 /* Новое в блоге и и форма подписаться */
 .new-in-blog-subscribe-form-container {
   display: grid;
