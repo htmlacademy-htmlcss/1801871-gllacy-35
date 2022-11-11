@@ -493,12 +493,13 @@ html {
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #FCFCFC;
 }
-.slider-button[:disabled] .slider-button-arrow{
+.slider-button[disabled] .slider-button-arrow{
   fill:#FCFCFC;
 }
 .offer-slider-navigation-dots-social-container {
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
 
 .offer-slider-navigation-dots-list {
@@ -529,7 +530,9 @@ html {
 }
 /* социальные сети */
 .social-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,24px);
+  gap:16px;
   list-style: none;
 
   padding: 0;
@@ -537,9 +540,34 @@ html {
 }
 
 .social-item {
-  margin-left: 16px;
-}
 
+}
+.social-link{
+  display: block;
+  height: 24px;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+.social-link-img{
+ fill:#FCFCFC;
+}
+.social-link:hover{
+  background-color: rgba(45, 52, 64, 1);
+
+}
+.social-link:active{
+  background-color: rgba(45, 52, 64, 0.5);
+}
+.social-link:active .social-link-img{
+  fill:rgba(252, 252, 252, 0.5);
+}
+.social-link:focus .social-link-img{
+ fill:#FCFCFC;
+}
+.social-link:focus{
+  outline: 2px solid rgba(45, 52, 64, 1);
+  background-color: rgba(45, 52, 64, 1);
+}
 /* Подарки */
 
 .gifts a {
@@ -570,7 +598,9 @@ html {
 }
 .gift-text-container{
   display:grid;
+  grid-template-rows: repeat(3,min-content);
   gap:28px;
+  justify-content: flex-start;
 }
 .gift-item-title{
   margin:0;
