@@ -595,9 +595,7 @@ html {
   margin: 0;
 }
 
-.social-item {
 
-}
 .social-link{
   display: block;
   height: 24px;
@@ -684,49 +682,6 @@ html {
   padding: 0;
   grid-template-columns: repeat(4, 270px);
   gap:30px;
-}
-.popular-product-item-link{
-  display:block;
-  margin-bottom: 16px;
-}
-.popular-product-item-text-container{
-  padding:0 40px 24px 40px;
-  display:flex;
-  flex-direction: column;
-  text-align: center;
-  flex-grow: 1;
-}
-
-.popular-item-title{
-  margin:0 0 8px 0;
-}
-.popular-item-description{
-  margin: 0 0 16px 0;
-}
-.popular-item-price-button-container{
-  display:flex;
-  justify-content: space-between;
-}
-.popular-product-item{
-  display:flex;
-  flex-direction: column;
-  flex-grow: 1;
-  position: relative;
-}
-.popular-product-item::after{
-  content:'';
-  position: absolute;
-  bottom:0;
-  height:281px;
-  width:270px;
-  background-color: #FCFCFC;
-  z-index: -1;
-  border-radius: 8px;
-}
-.popular-product-item-link-img{
-  display: block;
-  margin:0 auto;
-  border-radius: 50%;
 }
 .popular-product{
   margin-bottom: 80px;
@@ -1064,6 +1019,7 @@ html {
 }
 .breadcrumbs-item{
   margin-right: 28px;
+  position: relative;
 }
 /* Заголовок в каталоге */
 .catalog-main-title {
@@ -1071,7 +1027,18 @@ html {
   margin-bottom: 40px;
   text-align: left;
 }
-
+.breadcrumbs-item:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  background-image: url('../images/element/bread-crumbs-chevrons-right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  width:12px;
+  height:12px;
+  top:5px;
+  right:-20px;
+}
 /* Фильтр  */
 .icecream-filter {
   font-weight: 400;
@@ -1093,18 +1060,15 @@ html {
   display: flex;
   align-items: center;
 }
-
 .ice-cream-section-controls-button-show-more {
   font-weight: 700;
-  margin-left: auto;
+  margin-left: 487px;
   margin-right: auto;
 }
-
 .ice-cream-section a {
   color: inherit;
   text-decoration: none;
 }
-
 .ice-cream-list {
   display: grid;
   list-style: none;
@@ -1115,15 +1079,18 @@ html {
   row-gap: 40px;
   margin-bottom: 16px;;
 }
-
 .ice-cream-item{
   display:flex;
   flex-direction: column;
-  background-color: #FCFCFC;
+  flex-grow: 1;
+  position: relative;
 }
-
 .ice-cream-item-link{
-  display:block;
+  display: block;
+  margin:0 auto;
+}
+.ice-cream-item-link-img{
+  border-radius: 50%;
 }
 .ice-cream-item-text-container{
   padding:0 40px 24px 40px;
@@ -1132,19 +1099,27 @@ html {
   text-align: center;
   flex-grow: 1;
 }
-
 .ice-cream-item-title{
   margin:0 0 8px 0;
 }
 .ice-cream-item-description{
   margin: 0 0 16px 0;
+  flex-grow: 1;
+}
+.ice-cream-item::after{
+  content:'';
+  position: absolute;
+  bottom:0;
+  height:281px;
+  width:270px;
+  background-color: #FCFCFC;
+  z-index: -1;
+  border-radius: 8px;
 }
 .ice-cream-item-price-button-container{
   display:flex;
   justify-content: space-between;
-  margin-top:auto;
 }
-
 .pagination-list {
   display: flex;
   list-style: none;
