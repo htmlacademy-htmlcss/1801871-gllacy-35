@@ -29,6 +29,7 @@ body {
   font-weight: 400;
   background-color: #FEAFC3;
 
+
   color: #2D3440;
 
   margin: 0;
@@ -67,6 +68,61 @@ body {
 .button-red {
   color: #FCFCFC;
   background-color: #FF2F64;
+  padding: 12px 32px;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  box-sizing: border-box;
+  position: relative;
+}
+.button-red:hover{
+  border: 4px solid #FF2F64;
+  color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+.button-red:active{
+  background-color: #FEAFC3;
+  outline: 2px solid #2D3440;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border: 4px solid #FEAFC3;
+  color:#FCFCFC;
+}
+.button-red:focus{
+  outline: 2px solid #2D3440;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  background-color: #FF2F64;
+}
+.button-red[disabled]{
+  border: 4px solid rgba(185, 185, 185, 0.3);
+  background-color: #B9B9B9;
+  color: #565C66;
+}
+.button-red.loading{
+  padding-right:56px;
+}
+.button-red.loading::after{
+  position:absolute;
+  content: "";
+  width:16px;
+  height: 16px;
+  border:2px solid rgba(	207, 207, 207, 0.24);
+  right:32px;
+  top:15px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.button-red.loading::before{
+  position: absolute;
+  content: "";
+  width:16px;
+  height:16px;
+  border:2px solid rgba(	207, 207, 207);
+  right:32px;
+  top:15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-sizing: border-box;
+  clip: rect(auto,auto,8px,8px);
 }
 .main-button{
   position: relative;
@@ -893,6 +949,8 @@ html {
 }
 .telephone-number{
   margin:0;
+  color: inherit;
+  text-decoration: none;
 }
 .telephone-section-work-time {
   font-weight: 400;
@@ -902,10 +960,7 @@ html {
   margin-bottom:32px;
 }
 
-.contact a {
-  color: inherit;
-  text-decoration: none;
-}
+
 
 /* Футер */
 .main-footer a {
@@ -930,9 +985,18 @@ html {
 }
 .copyright {
   margin-right: 14px;
-  margin-left: auto;
-}
+  margin-left: 100px;
+  width: 293px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
+}
+.socials-footer{
+  width:200px;
+  margin-left:4px;
+  margin-right: 203px;
+}
 .footer-link {
   font-weight: 400;
   font-size: 14px;
@@ -961,6 +1025,20 @@ html {
 }
 .logo-link{
   display: block;
+}
+.footer-link-item-special{
+  position: relative;
+}
+.footer-link-item-special::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/element/heart-fill.svg);
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  left:-24px;
 }
 /* Каталог */
 
