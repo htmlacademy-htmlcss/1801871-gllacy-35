@@ -1124,6 +1124,38 @@ html {
   display: flex;
   list-style: none;
 }
+.pagination-arrow-left{
+  margin-right: 8px;
+}
+.pagination-arrow-right{
+  margin-left: 8px;
+}
+.pagination-item{
+  width:24px;
+  height:24px;
+  border-radius: 50%;
+}
+.pagination-item:hover{
+  background: rgba(252, 252, 252, 0.5);
+}
+.pagination-item:active{
+  outline: 1px solid #FCFCFC;
+  background: rgba(252, 252, 252, 0.5);
+}
+.pagination-item:focus{
+  outline: 1px solid #2D3440;
+  background: rgba(252, 252, 252, 0.5);
+}
+.pagination-item.current{
+  background: #FCFCFC;
+}
+.pagination-link{
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+}
 .ice-cream-section{
   margin-bottom: 40px;
 }
