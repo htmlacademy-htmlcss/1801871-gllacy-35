@@ -1175,6 +1175,7 @@ html {
 .ice-cream-filter-sort-container{
   margin-right: 24px;
   width:196px;
+  margin-bottom: 16px;
 }
 .icecream-filter-sort{
   width: 196px;
@@ -1275,6 +1276,7 @@ html {
 }
 .icecream-filter-fat-legend{
   margin-bottom: 8px;
+  margin-left:16px;
 }
 .icecream-filter-fat-list{
   margin:0;
@@ -1326,7 +1328,10 @@ html {
   border: 1.33333px solid rgba(45,52,64,0.4);
 }
 
-
+.icecream-filter-filler-checkbox-legend{
+  margin-left:16px;
+  margin-bottom:8px;
+}
 .icecream-filter-filler-checkbox-list{
   margin:0;
   list-style: none;
