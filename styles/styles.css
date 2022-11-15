@@ -1210,6 +1210,55 @@ ice-cream-filter-sort-container{
 .icecream-filter-price-range{
   grid-column: 2/3;
 }
+.icecream-filter-price-range-input-container{
+  margin-left: 16px;
+  margin-bottom:8px;
+}
+.icecream-filter-price-range-input{
+  width: 30px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+.icecream-filter-price-range-input::-webkit-outer-spin-button,
+.icecream-filter-price-range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.icecream-filter-price-range-line-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(252, 252, 252, 0.3);
+  width: 196px;
+  height: 36px;
+  border-radius: 20px;
+}
+.icecream-filter-price-range-line{
+  border: 2px solid rgba(86,92,102,0.3);
+  width:164px;
+  border-radius: 2px;
+  position: relative;
+}
+.icecream-filter-price-range-line-actually-price{
+  position: absolute;
+  border: 2px solid rgba(86,92,102,1);
+  top:-2px;
+  left:32px;
+}
+.price-range-button{
+  position: absolute;
+  width:16px;
+  height:16px;
+  border-radius: 50%;
+  border: 6px solid rgb(45, 52, 64);
+  background-color: #FCFCFC;
+  padding:0;
+  box-sizing: border-box;
+
+}
 
 /* отфильтрованные мороженные */
 .ice-cream-section-controls {

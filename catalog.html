@@ -85,8 +85,24 @@
 
           <fieldset class="icecream-filter-price-range fieldset-style">
           <legend class="visually-hidden">Диапазон цен поиска</legend>
-          <div class="icecream-filter-price-range-input-container">Цена:100 ₽ – 500 ₽</div>
-          <input type="range" min="100" max="500" step="100" id="icecream-filter-price-range" name="icecream-filter-price-range">
+            <div class="icecream-filter-price-range-input-container">
+              <label for="icecream-filter-price-range-min" class="visually-hidden">Минимальная цена</label>
+              <label for="icecream-filter-price-range-max" class="visually-hidden">Максимальная цена</label>
+              Цена:<input type="number" id="icecream-filter-price-range-min" name="min-price" value="100" class="icecream-filter-price-range-input">₽ – <input type="number" id="icecream-filter-price-range-max" name="max-price" value="500" class="icecream-filter-price-range-input">₽
+            </div>
+            <div class="icecream-filter-price-range-line-container">
+              <div class="icecream-filter-price-range-line">
+                <div class="icecream-filter-price-range-line-actually-price"  style="left: 32px; width: 72px">
+                <button type="button" class="price-range-button">
+                  <span class="visually-hidden">Минимальная цена</span>
+                </button>
+                <button type="button" class="price-range-button">
+                  <span class="visually-hidden">Максимальная цена</span>
+                </button>
+
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="icecream-filter-fat">
