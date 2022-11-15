@@ -1169,13 +1169,12 @@ html {
   font-size: 14px;
 }
 .ice-cream-filter-form{
-  display:grid;
-  grid-template-columns: 196px 196px 164px 185px;
-  column-gap: 16px;
-  row-gap: 44px;
+  display:flex;
+  flex-wrap: wrap;
 }
-ice-cream-filter-sort-container{
-  grid-column: 1/2;
+.ice-cream-filter-sort-container{
+  margin-right: 24px;
+  width:196px;
 }
 .icecream-filter-sort{
   width: 196px;
@@ -1210,7 +1209,9 @@ ice-cream-filter-sort-container{
   border: none;
 }
 .icecream-filter-price-range{
-  grid-column: 2/3;
+  margin-right:24px;
+  width:196px;
+
 }
 .icecream-filter-price-range-input-container{
   margin-left: 16px;
@@ -1268,22 +1269,39 @@ ice-cream-filter-sort-container{
 .price-range-button-right{
   right:-8px;
 }
+
+.icecream-filter-fat{
+  width:383px;
+}
+.icecream-filter-fat-legend{
+  margin-bottom: 8px;
+}
 .icecream-filter-fat-list{
   margin:0;
-  padding:0;
   list-style: none;
+  display: flex;
+  height: 36px;
+  padding:8px 24px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  box-sizing: border-box;
+
+}
+.icecream-filter-item:not(:last-child){
+  margin-right: 16px;
 }
 .icecream-filter-control{
   position: relative;
   display: block;
   padding-left: 24px;
 }
+
 .icecream-filter-control-mark{
   position: absolute;
   width:16px;
   height: 16px;
   box-sizing: border-box;
-  border:1.3px solid rgb(0,0,0);
+  border:1.33333px solid rgb(0,0,0);
   left:0;
   top:2px;
 }
@@ -1292,7 +1310,21 @@ ice-cream-filter-sort-container{
 }
 .icecream-filter-control-input:checked + .icecream-filter-control-mark::after{
   content: "";
+  position: absolute;
+  top:4px;
+  left:4px;
+  border:3px solid;
+  border-color: inherit;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
+.icecream-filter-control:hover .icecream-filter-control-mark{
+  border: 1.33333px solid #FCFCFC;
+}
+.icecream-filter-control-input:disabled + .icecream-filter-control-mark{
+  border: 1.33333px solid rgba(45,52,64,0.4);
+}
+
 /* отфильтрованные мороженные */
 .ice-cream-section-controls {
   font-weight: 400;
