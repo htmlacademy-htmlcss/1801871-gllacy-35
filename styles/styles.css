@@ -1304,11 +1304,12 @@ html {
   border:1.33333px solid rgb(0,0,0);
   left:0;
   top:2px;
+  border-radius: 2px;
 }
 .icecream-filter-fat-list .icecream-filter-control-mark{
   border-radius: 50%;
 }
-.icecream-filter-control-input:checked + .icecream-filter-control-mark::after{
+.icecream-filter-control-input[type="radio"]:checked + .icecream-filter-control-mark::after{
   content: "";
   position: absolute;
   top:4px;
@@ -1325,6 +1326,60 @@ html {
   border: 1.33333px solid rgba(45,52,64,0.4);
 }
 
+
+.icecream-filter-filler-checkbox-list{
+  margin:0;
+  list-style: none;
+  display: flex;
+  height: 36px;
+  padding:8px 24px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+  box-sizing: border-box;
+  margin-right: 16px;
+}
+.icecream-filter-control-input[type="checkbox"]:checked + .icecream-filter-control-mark{
+  background-image: url(../images/element/union.svg);
+  border:0;
+}
+.icecream-filter-control:hover .icecream-filter-control-input[type="checkbox"]:checked + .icecream-filter-control-mark{
+  background-image: url(../images/element/union-white.svg);
+  border:0;
+}
+.icecream-filter-control:hover .icecream-filter-control-input[type="checkbox"]:disabled:checked + .icecream-filter-control-mark{
+  background-image: url(../images/element/union-grey.svg);
+  border:0;
+}
+.sort-submite-button-position{
+  align-self: flex-end;
+  width:185px;
+}
+.sort-submite-button{
+  height:36px;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding:8px 32px;
+  outline: 2px solid #FCFCFC;
+  border-radius: 20px;
+  border:0;
+  box-sizing: border-box;
+}
+.sort-submite-button:hover{
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+  background-color:  #FCFCFC;
+}
+.sort-submite-button:active{
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: none;
+}
+.sort-submite-button:focus{
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 2px solid #2D3440;
+}
+.sort-submite-button:disabled{
+  background-color: rgba(252, 252, 252, 0.3);
+  opacity: 0.4;
+  outline: 2px solid #FCFCFC;
+}
 /* отфильтрованные мороженные */
 .ice-cream-section-controls {
   font-weight: 400;
