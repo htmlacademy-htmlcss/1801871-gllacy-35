@@ -68,20 +68,26 @@
             <img src="#" class="breadcrumbs-arrow" alt>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Сливочное мороженое</a>
+            <a class="breadcrumbs-link current">Сливочное мороженое</a>
           </li>
       </ul>
       </div>
       <h1 class="large-text-decoration catalog-main-title">Сливочное мороженое</h1>
       <aside class="icecream-filter">
         <h2 class="visually-hidden">Фильтр мороженного</h2>
-        <form action="#" method="post">
-          <label for="icecream-filter-sort">Сортировка:</label>
-          <select class="icecream-filter-sort" id="icecream-filter-sort" name="icecream-filter-sort">
-            <option value="popular" selected>по популярности</option>
-          </select>
-          <label for="icecream-filter-price-range">Цена: 100 ₽ – 500 ₽</label>
+        <form action="#" method="post"class="ice-cream-filter-form">
+          <div class="ice-cream-filter-sort-container">
+            <label for="icecream-filter-sort" class="icecream-filter-sort-label">Сортировка:</label>
+            <select class="icecream-filter-sort" id="icecream-filter-sort" name="icecream-filter-sort">
+              <option value="popular" selected>по популярности</option>
+            </select>
+          </div>
+
+          <fieldset class="icecream-filter-price-range fieldset-style">
+          <legend class="visually-hidden">Диапазон цен поиска</legend>
+          <div class="icecream-filter-price-range-input-container">Цена:100 ₽ – 500 ₽</div>
           <input type="range" min="100" max="500" step="100" id="icecream-filter-price-range" name="icecream-filter-price-range">
+          </fieldset>
 
           <fieldset class="icecream-filter-fat">
             <legend class="icecream-filter-fat-legend">Жирность:</legend>

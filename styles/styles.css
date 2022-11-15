@@ -1135,11 +1135,8 @@ html {
   margin-right: 28px;
   position: relative;
 }
-/* Заголовок в каталоге */
-.catalog-main-title {
-  margin: 0;
-  margin-bottom: 40px;
-  text-align: left;
+.breadcrumbs-link.current{
+ text-decoration: underline;
 }
 .breadcrumbs-item:not(:last-child)::after{
   content: "";
@@ -1153,6 +1150,13 @@ html {
   top:5px;
   right:-20px;
 }
+/* Заголовок в каталоге */
+.catalog-main-title {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
 /* Фильтр  */
 .icecream-filter {
   font-weight: 400;
@@ -1163,6 +1167,48 @@ html {
 
 .sort-submite-button {
   font-size: 14px;
+}
+.ice-cream-filter-form{
+  display:grid;
+  grid-template-columns: 196px 196px 164px 185px;
+  column-gap: 16px;
+  row-gap: 44px;
+}
+ice-cream-filter-sort-container{
+  grid-column: 1/2;
+}
+.icecream-filter-sort{
+  width: 196px;
+  padding:8px 16px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-image: url(../images/element/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  appearance: none;
+  color: #2D3440;
+}
+.icecream-filter-sort:hover{
+  background-color: rgba(252, 252, 252, 0.5);
+}
+.icecream-filter-sort:focus{
+  outline: 2px solid #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.4);
+}
+.icecream-filter-sort-label{
+  display: inline-block;
+  margin-bottom:8px;
+  margin-left:16px;
+}
+
+.fieldset-style{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.icecream-filter-price-range{
+  grid-column: 2/3;
 }
 
 /* отфильтрованные мороженные */
