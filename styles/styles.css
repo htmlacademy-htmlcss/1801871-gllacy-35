@@ -181,10 +181,52 @@ body {
   box-sizing: border-box;
   clip: rect(auto,auto,8px,8px);
 }
-.placeholder {
+/* .placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+} */
+.input{
+  padding: 14px 16px;
+  height: 48px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color:#2D3440;
+  box-sizing: border-box;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.input::placeholder{
+  color: #B9B9B9;
+}
+.input:hover{
+  border: 1px solid #2D3440;
+}
+input:focus{
+  outline: 1px solid #2D3440;
+  border: 1px solid #2D3440;
+}
+.input:invalid{
+  border: 1px solid #EA5454;
+}
+.input:invalid:hover{
+  border: 1px solid #EA5454;
+  outline: 1px solid #EA5454;
+}
+.input:disabled{
+  background-color: #E7E7E7;
+}
+.input:disabled:hover{
+  color: #2D3440;
+  border: 1px solid #B9B9B9;
+}
+input:disabled:hover::placeholder{
+    color: #2D3440;
 }
 .visually-hidden {
   position: absolute;
@@ -729,7 +771,6 @@ html {
   fill:rgba(0, 0, 0, 1)
 }
 /* О нас */
-/* микросетки на гридах */
 .about-us {
   background-image: url("../images/background/background-about-us-pattern.jpg");
   margin-bottom: 80px;
@@ -817,7 +858,7 @@ html {
   line-height: 20px;
   margin:0 0 12px 0;
 }
-
+/* форма подписаться */
 .subscribe-form {
   width: 570px;
   background-image: url("../images/background/background-subscribe.jpg");
@@ -837,6 +878,14 @@ html {
 }
 .subscribe-form-title {
   margin: 0;
+}
+.subscribe-form-form{
+  display:flex;
+  justify-content: space-between;
+}
+.subscribe-form-input{
+  flex-grow: 1;
+  margin-right: 18px;
 }
 
 /* Доставка на дом  */
