@@ -1188,6 +1188,8 @@ ice-cream-filter-sort-container{
   background-position: right 13px center;
   appearance: none;
   color: #2D3440;
+  height: 36px;
+  border:0;
 }
 .icecream-filter-sort:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -1213,6 +1215,7 @@ ice-cream-filter-sort-container{
 .icecream-filter-price-range-input-container{
   margin-left: 16px;
   margin-bottom:8px;
+  height: 20px;
 }
 .icecream-filter-price-range-input{
   width: 30px;
@@ -1257,9 +1260,39 @@ ice-cream-filter-sort-container{
   background-color: #FCFCFC;
   padding:0;
   box-sizing: border-box;
-
+  top:-8px;
 }
-
+.price-range-button-left{
+  left: -8px;
+}
+.price-range-button-right{
+  right:-8px;
+}
+.icecream-filter-fat-list{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.icecream-filter-control{
+  position: relative;
+  display: block;
+  padding-left: 24px;
+}
+.icecream-filter-control-mark{
+  position: absolute;
+  width:16px;
+  height: 16px;
+  box-sizing: border-box;
+  border:1.3px solid rgb(0,0,0);
+  left:0;
+  top:2px;
+}
+.icecream-filter-fat-list .icecream-filter-control-mark{
+  border-radius: 50%;
+}
+.icecream-filter-control-input:checked + .icecream-filter-control-mark::after{
+  content: "";
+}
 /* отфильтрованные мороженные */
 .ice-cream-section-controls {
   font-weight: 400;
