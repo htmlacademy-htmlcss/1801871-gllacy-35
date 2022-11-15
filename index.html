@@ -362,21 +362,30 @@
           </div>
           <div class="delivery-form-container">
             <form action="#" method="post">
-              <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-              <label for="delivery-date">Дата</label>
-              <a class="delivery-help-link" href="#">
-                <img class="delivery-help-img" src="images/element/info.svg" alt="Подсказка"></a>
-              <input type="text" name="delivery-date" id="delivery-date" class="input" placeholder="01.04.2020">
-
-              <label for="telephone">Телефон</label>
-              <input id="telephone" type="tel" name="delivery-telephone" class="input" placeholder="+7 800 999-00-00">
-
-              <label for="delivery-address">Адрес</label>
-              <a class="delivery-help-link" href="#">
-                <img class="delivery-help-img" src="images/element/info.svg" alt="Подсказка"></a>
-              <input id="delivery-address" type="text" name="delivery-address" class="input" placeholder="ул. Большая Конюшенная, 19/8">
-
-              <button type="submit" class="main-button-text-decoration button-red" >
+              <p class="delivery-form-request">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+              <div class="delivery-form">
+                <p class="delivery-date">
+                  <span class="delivery-date-label-help">
+                    <label for="delivery-date">Дата</label>
+                    <a class="delivery-help-link" href="#">
+                      <img class="delivery-help-img" src="images/element/info.svg" alt="Подсказка" width="14px" height="14px"></a>
+                  </span>
+                  <input type="text" name="delivery-date" id="delivery-date" class="input delivery-date-input" placeholder="01.04.2020">
+                </p>
+                <p class="delivery-telephone">
+                  <label for="telephone" class="telephone">Телефон</label>
+                  <input id="telephone" type="tel" name="delivery-telephone" class="input delivery-telephone-input" placeholder="+7 800 999-00-00">
+                </p>
+                <p class="delivery-address">
+                  <span class="delivery-address-label-help">
+                    <label for="delivery-address">Адрес</label>
+                    <a class="delivery-help-link" href="#">
+                      <img class="delivery-help-img" src="images/element/info.svg" alt="Подсказка"></a>
+                  </span>
+                  <input id="delivery-address" type="text" name="delivery-address" class="input delivery-address-input" placeholder="ул. Большая Конюшенная, 19/8">
+                </p>
+              </div>
+              <button type="submit" class="main-button-text-decoration button-red delivery-submit-button" >
                 <span class="main-button-text-decoration">Отправить</span>
               </button>
             </form>
