@@ -69,14 +69,15 @@ body {
   color: #FCFCFC;
   background-color: #FF2F64;
   padding: 12px 32px;
-  border: 4px solid rgba(255, 47, 100, 0.3);
+  outline: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   box-sizing: border-box;
   position: relative;
+  border:0;
 }
 .button-red:hover{
-  border: 4px solid #FF2F64;
+  outline: 4px solid #FF2F64;
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
 }
@@ -93,7 +94,7 @@ body {
   background-color: #FF2F64;
 }
 .button-red[disabled]{
-  border: 4px solid rgba(185, 185, 185, 0.3);
+  outline: 4px solid rgba(185, 185, 185, 0.3);
   background-color: #B9B9B9;
   color: #565C66;
 }
@@ -130,13 +131,13 @@ body {
   border-radius: 26px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   padding: 12px 32px;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  outline: 4px solid rgba(252, 252, 252, 0.4);
   box-sizing: border-box;
 }
 .main-button:hover{
   background: rgba(252, 252, 252, 0.4);
   box-shadow: 0 4px 15px rgba(133, 133, 133, 0.15);
-  border: 4px solid #FCFCFC;
+  outline: 4px solid #FCFCFC;
 }
 .main-button:focus{
   background: rgba(252, 252, 252, 0.5);
@@ -150,7 +151,7 @@ body {
 }
 .main-button[disabled]{
   background: #E7E7E7;
-  border: 4px solid rgba(252, 252, 252, 0.4);
+  outline: 4px solid rgba(252, 252, 252, 0.4);
   color: #B9B9B9;
 }
 .main-button.loading{
@@ -277,35 +278,35 @@ html {
   top:10px;
   fill:#2D3440;
 }
-.navigation-item:hover{
+.navigation-item-link:hover{
   background-color: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
 }
-.navigation-item:active{
+.navigation-item-link:active{
   background-color: #FCFCFC;
   border-radius: 30px;
 }
-.navigation-item:focus{
+.navigation-item-link:focus{
   background: rgba(252, 252, 252, 0.5);
   border-radius: 30px;
   outline: 2px solid #2D3440;
 }
-.navigation-item.active {
+.navigation-item-link.active {
   background: #FF4A78;
   color: #FCFCFC;
   border-radius: 30px;
 }
-.navigation-item.active svg{
+.navigation-item-link.active svg{
   transform: rotate(0.5turn);
   fill:#FCFCFC;
 }
-.navigation-item.active:hover{
+.navigation-item-link.active:hover{
   background: rgba(255,74,120,0.6);
 }
-.navigation-item.active:active{
+.navigation-item-link.active:active{
   background:rgba(255,74,120,0.3);
 }
-.navigation-item.active:focus{
+.navigation-item-link.active:focus{
   background: #FF4A78;
   border-radius: 30px;
   outline: 2px solid #2D3440;
@@ -627,8 +628,6 @@ html {
 .gifts a {
   color: inherit;
   text-decoration: none;
-  align-self: flex-end;
-  justify-self: flex-start;
 }
 .gifts-title{
   margin:0 auto 55px;
@@ -645,7 +644,6 @@ html {
 .gift-item {
   background-color: #FF7799;
   width: 570px;
-  padding: 36px;
   padding-right: 0;
   box-sizing: border-box;
 
@@ -654,15 +652,25 @@ html {
 
 }
 .gift-text-container{
-  display:grid;
-  grid-template-rows: min-content, 1fr, min-content;
-  gap:28px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding:36px 0 36px 36px;
 }
 .gift-item-title{
   margin:0;
+  margin-bottom:28px;
 }
 .gift-item-text-content{
   margin:0;
+  flex-grow: 1;
+  margin-bottom: 28px;
+}
+.gift-item-link{
+  align-self:flex-end;
+  display: flex;
+  align-items: flex-start;
 }
 
 .gift-item:nth-child(odd) {
@@ -726,6 +734,7 @@ html {
   background-image: url("../images/background/background-about-us-pattern.jpg");
   margin-bottom: 80px;
   padding:24px;
+  border-radius: 16px;
 }
 .about-us-title{
   margin:0;
@@ -799,6 +808,7 @@ html {
   width: 570px;
   padding:32px 235px 32px 32px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 
 .new-in-blog-title {
@@ -813,6 +823,7 @@ html {
   background-image: url("../images/background/background-subscribe.jpg");
   box-sizing: border-box;
   padding:6px;
+  border-radius: 16px;
 }
 
 .subscribe-form-wrapper {
@@ -836,7 +847,7 @@ html {
   margin-bottom: 80px;
   background-repeat: no-repeat;
   box-sizing: border-box;
-
+  border-radius: 16px;
 }
 
 .delivery-form-container label {
@@ -872,6 +883,7 @@ html {
   min-height: 492px;
   padding: 64px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 
 .contact-container {
@@ -935,9 +947,7 @@ html {
   margin-left: 4px;
   margin-right: auto;
 }
-.social-item:first-child {
-  margin-left:0;
-}
+
 .copyright {
   margin-right: 14px;
   margin-left: 100px;
@@ -1123,6 +1133,10 @@ html {
 .pagination-list {
   display: flex;
   list-style: none;
+  margin:0;
+  padding:0;
+  max-width:350px;
+  flex-wrap: wrap;
 }
 .pagination-arrow-left{
   margin-right: 8px;
@@ -1130,31 +1144,27 @@ html {
 .pagination-arrow-right{
   margin-left: 8px;
 }
-.pagination-item{
-  width:24px;
-  height:24px;
-  border-radius: 50%;
-}
-.pagination-item:hover{
+.pagination-link:hover{
   background: rgba(252, 252, 252, 0.5);
 }
-.pagination-item:active{
+.pagination-link:active{
   outline: 1px solid #FCFCFC;
   background: rgba(252, 252, 252, 0.5);
 }
-.pagination-item:focus{
+.pagination-link:focus{
   outline: 1px solid #2D3440;
   background: rgba(252, 252, 252, 0.5);
 }
-.pagination-item.current{
+.pagination-link.current{
   background: #FCFCFC;
 }
 .pagination-link{
-  display: block;
-  text-align: center;
   border-radius: 50%;
   height: 24px;
   width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ice-cream-section{
   margin-bottom: 40px;

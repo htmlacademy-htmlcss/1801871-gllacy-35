@@ -15,7 +15,7 @@
             </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="catalog-dropdown" href="catalog.html">
+            <a class="catalog-dropdown navigation-item-link" href="catalog.html">
                 Каталог
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="catalog-dropdown-icon">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80799 6.19526C3.54764 5.93491 3.12553 5.93491 2.86518 6.19526C2.60483 6.45561 2.60483 6.87772 2.86518 7.13807L7.52553 11.7984C7.52759 11.8005 7.52967 11.8026 7.53177 11.8047C7.66246 11.9354 7.83392 12.0005 8.00521 12C8.17518 11.9995 8.34498 11.9344 8.47466 11.8047C8.47675 11.8027 8.47881 11.8006 8.48087 11.7985L13.1412 7.13807C13.4016 6.87772 13.4016 6.45561 13.1412 6.19526C12.8809 5.93491 12.4588 5.93491 12.1984 6.19526L8.00321 10.3905L3.80799 6.19526Z" />
@@ -23,10 +23,10 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Доставка и оплата</a>
+            <a href="#" class="navigation-item-link">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">О компании</a>
+            <a href="#" class="navigation-item-link">О компании</a>
           </li>
         </ul>
       </nav>
@@ -40,12 +40,12 @@
               </a>
             </li>
             <li class="user-navigation-item">
-              <a class="button-entry button-user" href="#">
+              <a class="button-entry" href="#">
                   Вход
               </a>
             </li>
             <li class="user-navigation-item">
-              <a class="button-basket button-user" href="#">
+              <a class="button-basket" href="#">
                   <span class="basket-value">2 Товара</span>
               </a>
             </li>
@@ -54,6 +54,7 @@
       </div>
     </div>
   </header>
+
   <main>
     <div class="main-container">
       <div class="breadcrumbs">
@@ -352,12 +353,14 @@
            <div class="ice-cream-pagination">
               <ul class="pagination-list">
                 <li class="pagination-arrow-left">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="pagination-arrow-left-img">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" fill="#2D3440"/>
-                  </svg>
+                  <a class="pagination-link" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="pagination-arrow-left-img">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z" fill="#2D3440"/>
+                    </svg>
+                  </a>
                 </li>
                 <li class="pagination-item current">
-                  <a class="pagination-link" href="#">1</a>
+                  <a class="pagination-link current" href="#">1</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">2</a>
@@ -372,9 +375,11 @@
                   <a class="pagination-link" href="#">5</a>
                 </li>
                 <li class="pagination-arrow-right">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="pagination-arrow-right-img">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" fill="#2D3440"/>
-                  </svg>
+                  <a class="pagination-link" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="pagination-arrow-right-img">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z" fill="#2D3440"/>
+                    </svg>
+                 </a>
                 </li>
               </ul>
 
