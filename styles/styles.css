@@ -362,16 +362,17 @@ html {
   padding:6px 0;
 }
 .button-search{
-  background-image: url(../images/element/nav-search.svg);
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 27px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
   width:32px;
   height:32px;
   box-sizing: border-box;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-search-img{
+  fill:#2D3440;
 }
 .button-search:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -382,10 +383,12 @@ html {
 .button-search:active{
   background-color: #FCFCFC;
 }
+.button-search.active .button-search-img{
+  fill:#FCFCFC;
+}
 .button-search.active{
   background-color: #FF4A78;
   border-radius: 27px;
-
 }
 .button-search.active:hover{
   background-color: rgba(255,74,120,0.6);
@@ -399,15 +402,18 @@ html {
   outline: 2px solid #2D3440;
 }
 .button-entry{
-  background-image: url(../images/element/nav-log-in.svg);
-  background-repeat: no-repeat;
-  background-position: 16px;
-  background-size: 16px 16px;
   padding: 6px 16px 6px 38px;
   display: block;
   box-sizing: border-box;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
+  position: relative;
+}
+.button-entry-img{
+  fill:#2D3440;
+  position: absolute;
+  left:16px;
+  top:8px;
 }
 .button-entry:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -422,6 +428,9 @@ html {
   background-color: #FF4A78;
   color:#FCFCFC;
 }
+.button-entry.active .button-entry-img{
+  fill:#FCFCFC;
+}
 .button-entry.active:hover{
   background-color: rgba(255,74,120,0.6);
   color:#FCFCFC;
@@ -432,21 +441,23 @@ html {
 }
 .button-entry.active:focus{
   background-color: #FF4A78;
-  border-radius: 30px;
   outline: 2px solid #2D3440;
   color:#FCFCFC;
 }
 .button-basket{
-  background-image: url(../images/element/cart.svg);
-  background-repeat: no-repeat;
-  background-position: 16px;
-  background-size: 16px 16px;
   padding: 6px 16px 6px 38px;
   display: block;
   box-sizing: border-box;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   border:0;
+  position: relative;
+}
+.button-basket-img{
+  fill:#2D3440;
+  position: absolute;
+  left:16px;
+  top:8px;
 }
 .button-basket:hover{
   background-color: rgba(252, 252, 252, 0.5);
@@ -457,6 +468,28 @@ html {
 .button-basket:active{
   background-color: #FCFCFC;
 }
+.button-basket.active{
+  background-color: #FF4A78;
+  color:#FCFCFC;
+}
+.button-basket.active .button-basket-img{
+  fill:#FCFCFC;
+}
+.button-basket.active:hover{
+  background-color: rgba(255,74,120,0.6);
+  color:#FCFCFC;
+}
+.button-basket.active:active{
+  background-color:rgba(255,74,120,0.3);
+  color:#FCFCFC;
+}
+.button-basket.active:focus{
+  background-color: #FF4A78;
+  outline: 2px solid #2D3440;
+  color:#FCFCFC;
+}
+
+
 
 .user-navigation-list {
   display: flex;
@@ -472,6 +505,9 @@ html {
   position: relative;
 }
 /* Поповер */
+.button-basket.active + .popover-cart{
+  display:block;
+}
 .popover-title{
   font-weight: 700;
   font-size: 24px;
@@ -503,7 +539,7 @@ html {
 .popover-cart-list-item{
   display:grid;
   grid-template-columns: 46px 148px 109px;
-  grid-template-rows: 23px 23px;
+  grid-template-rows: 23px min-content;
   column-gap: 16px;
   margin-bottom: 24px;
 }
@@ -1421,8 +1457,8 @@ html {
 .icecream-filter-control-input[type="radio"]:checked + .icecream-filter-control-mark::after{
   content: "";
   position: absolute;
-  top:4px;
-  left:4px;
+  top: 3.5px;
+  left:3.5px;
   border:3px solid;
   border-color: inherit;
   border-radius: 50%;
