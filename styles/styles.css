@@ -517,6 +517,9 @@ html {
 .button-search.active + .popover-search{
   display: block;
 }
+.catalog-dropdown.active +.catalog-popover{
+  display: block;
+}
 
 .popover-title{
   font-weight: 700;
@@ -708,6 +711,49 @@ html {
 }
 .search-popover{
   width:100%;
+}
+
+.catalog-popover{
+  display: none;
+  position: absolute;
+  background: #FCFCFC;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width:138px;
+  z-index: 10;
+  text-align: left;
+  left:0;
+  top:40px;
+}
+.catalog-popover-hr{
+  color:#B9B9B9;
+  size:1px;
+  width:103px;
+  margin:0;
+  border-radius: 2px;
+  margin-left:16px;
+}
+.catalog-popover-list{
+  margin:0;
+  padding:0;
+  list-style: none;
+  margin-bottom: 8px;
+}
+.catalog-popover-title{
+  margin-top: 16px;
+  margin-bottom:12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left:16px;
+}
+
+.catalog-popover-link.link-padding{
+  display: block;
+  padding: 6px 16px;
+}
+.navigation-item-catalog{
+  position: relative;
 }
 /* Слайдер */
 .offer-slider ul {
