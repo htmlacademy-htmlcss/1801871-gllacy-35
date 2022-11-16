@@ -75,7 +75,7 @@
                 </a>
                 <div class="popover-enter">
                   <h2 class="popover-enter-title">Личный кабинет</h2>
-                  <form class="popover-enter-form">
+                  <form class="popover-enter-form" action="https://echo.htmlacademy.ru">
                     <input type="email" id="popover-email" name="popover-email" class="popover-email input" placeholder="email@example.com">
 
                     <label for="popover-email" class="visually-hidden">Поле ввода почты</label>
@@ -556,5 +556,29 @@
         </div>
     </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal-feedback modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <span class="modal-title">Мы обязательно ответим вам!</span>
+          <form class="modal-form" action="https://echo.htmlacademy.ru">
+            <input type="text" name="modal-name" id="modal-name" class="input modal-input" placeholder="Имя и фамилия">
+            <label for="modal-name" class="visually-hidden">Ваше имя и фамилия</label>
+
+            <input type="text" name="modal-email" id="modal-email" class="input modal-input" placeholder="Имя и фамилия">
+            <label for="modal-email" class="visually-hidden">Ваша почта</label>
+
+            <textarea class="textarea" rows="5" name="textarea-modal">  В свободной форме
+            </textarea>
+            <button class="button-red main-button-text-decoration modal-button" type="submit">Отправить</button>
+          </form>
+        </section>
+
+      </div>
+    </div>
   </body>
 </html>
