@@ -505,8 +505,11 @@ html {
   position: relative;
 }
 /* Поповер */
-.button-basket.active + .popover-cart{
+.button-basket.active.not-empty + .popover-cart{
   display:block;
+}
+.button-basket.active.empty ~ .popover-cart-empty{
+  display: block;
 }
 .popover-title{
   font-weight: 700;
@@ -612,6 +615,25 @@ html {
   font-size: 18px;
   line-height: 22px;
   color: #2D3440;
+}
+
+.popover-cart-empty{
+  display:none;
+  position: absolute;
+  padding: 48px 0;
+  width:288px;
+  background: #FCFCFC;
+  text-align: center;
+  border-radius: 4px;
+  right:0;
+  top:40px;
+  box-sizing: border-box;
+}
+.popover-cart-empty-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin:0;
 }
 /* Слайдер */
 .offer-slider ul {
