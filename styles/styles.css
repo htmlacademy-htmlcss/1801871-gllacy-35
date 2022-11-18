@@ -75,6 +75,7 @@ body {
   box-sizing: border-box;
   position: relative;
   border:0;
+  display:inline-block;
 }
 .button-red:hover{
   outline: 4px solid #FF2F64;
@@ -85,7 +86,6 @@ body {
   background-color: #FEAFC3;
   outline: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  border: 4px solid #FEAFC3;
   color:#FCFCFC;
 }
 .button-red:focus{
@@ -1165,6 +1165,7 @@ html {
   box-sizing: border-box;
   padding:6px;
   border-radius: 16px;
+  min-height: 224px;
 }
 
 .subscribe-form-wrapper {
@@ -1172,6 +1173,7 @@ html {
   min-height: 100%;
   padding:26px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 .subscribe-form-text{
   margin:0 0 42px 0;
@@ -1187,7 +1189,10 @@ html {
   flex-grow: 1;
   margin-right: 18px;
 }
-
+.subscribe-form-form button{
+  font-family: 'Inter', sans-serif;
+  height: 44px;
+}
 /* Доставка на дом  */
 .delivery {
   display: flex;
@@ -1206,8 +1211,9 @@ html {
 }
 
 .delivery-text-container {
-  margin-right: 150px;
+  margin-right: 130px;
   align-self:center;
+  margin-top:5px;
 
 }
 .delivery-title{
@@ -1228,6 +1234,11 @@ html {
   min-height: 406px;
   padding:40px;
   box-sizing: border-box;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+.delivery-form-container button{
+  font-family: 'Inter' sans-serif;
 }
 .delivery-help-link{
   display: flex;
@@ -1347,24 +1358,18 @@ html {
   padding-bottom: 57px;
 }
 
-.socials-footer {
-  margin-left: 4px;
-  margin-right: auto;
-}
-
 .copyright {
-  margin-right: 14px;
-  margin-left: 100px;
-  width: 293px;
+  margin-right: 13px;
+  margin-left: auto;
+  width: 193px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
 }
 .socials-footer{
   width:200px;
   margin-left:4px;
-  margin-right: 203px;
+  margin-right: 227px;
 }
 .footer-link {
   font-weight: 400;
@@ -1394,6 +1399,7 @@ html {
 }
 .logo-link{
   display: block;
+  margin-bottom: 10px;
 }
 .footer-link-item-special{
   position: relative;
@@ -1408,6 +1414,10 @@ html {
   width: 16px;
   height: 16px;
   left:-24px;
+  top:2px;
+}
+.copyright a{
+  text-decoration: underline;
 }
 /* Модальное окно */
 
@@ -1532,7 +1542,12 @@ html {
   line-height: 20px;
   margin-bottom: 44px;
 }
-
+.ice-cream-filter-sort-container select{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
 .sort-submite-button {
   font-size: 14px;
 }
@@ -1610,14 +1625,14 @@ html {
   border-radius: 20px;
 }
 .icecream-filter-price-range-line{
-  border: 2px solid rgba(86,92,102,0.3);
+  border: 1px solid rgba(86,92,102,0.3);
   width:164px;
   border-radius: 2px;
   position: relative;
 }
 .icecream-filter-price-range-line-actually-price{
   position: absolute;
-  border: 2px solid rgba(86,92,102,1);
+  border: 1px solid rgba(86,92,102,1);
   top:-2px;
   left:32px;
 }
@@ -1683,7 +1698,7 @@ html {
   content: "";
   position: absolute;
   top: 3.5px;
-  left:3.5px;
+  left:4px;
   border:3px solid;
   border-color: inherit;
   border-radius: 50%;
@@ -1758,6 +1773,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  padding: 41px 0;
 
   display: flex;
   align-items: center;
@@ -1779,7 +1795,7 @@ html {
   grid-template-columns: repeat(4, 270px);
   column-gap: 30px;
   row-gap: 40px;
-  margin-bottom: 16px;;
+  margin-bottom: 16px;
 }
 .ice-cream-item{
   display:flex;
@@ -1788,9 +1804,10 @@ html {
   position: relative;
 }
 .ice-cream-item-link{
-  display: block;
+
   margin:0 auto;
   margin-bottom: 16px;
+  display:flex;
 }
 .ice-cream-item-link-img{
   border-radius: 50%;
@@ -1835,9 +1852,11 @@ html {
 }
 .pagination-arrow-left{
   margin-right: 8px;
+  display: flex;
 }
 .pagination-arrow-right{
   margin-left: 8px;
+  display: flex;
 }
 .pagination-link:hover{
   background: rgba(252, 252, 252, 0.5);
@@ -1860,6 +1879,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.pagination-link-arrow{
+  width:16px;
+  height:16px;
+  align-self:center;
 }
 .ice-cream-section{
   margin-bottom: 40px;
