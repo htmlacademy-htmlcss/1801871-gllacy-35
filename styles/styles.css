@@ -257,6 +257,8 @@ html {
 
 .main-header-telephone {
   font-weight: 700;
+  display: block;
+  min-width: 150px;
 }
 
 .main-header a {
@@ -408,6 +410,7 @@ html {
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   position: relative;
+  font-size:14px;
 }
 .button-entry-img{
   fill:#2D3440;
@@ -488,7 +491,9 @@ html {
   outline: 2px solid #2D3440;
   color:#FCFCFC;
 }
-
+.basket-value{
+  font-size:14px;
+}
 
 
 .user-navigation-list {
@@ -801,6 +806,8 @@ html {
   flex-direction: column;
   align-items: flex-start;
   padding-left:70px;
+  align-self:center;
+  margin-top:20px;
 }
 .offer-slider-img-item-big{
   position: relative;
@@ -812,7 +819,7 @@ html {
   position: absolute;
   border-radius: 50%;
   background-color: #FFCBD8;
-  top: 100px;
+  top: 120px;
   z-index: -1;
 }
 .big-slider-img{
@@ -821,6 +828,10 @@ html {
 }
 .offer-slide-img-item-small{
   position: relative;
+  margin-top:30px;
+}
+.small-slider-img{
+  opacity: 0.4;
 }
 .offer-slide-img-item-small::after{
   content: "";
@@ -832,11 +843,12 @@ html {
   top: 25px;
   left:-17px;
   z-index: -1;
+  opacity: 0.4;
 }
 .offer-slider-navigation-buttons{
   position: absolute;
-  top: 240px;
-  left: 545px;
+  top: 257px;
+  left: 543px;
   display: flex;
   justify-content: space-between;
   width: 350px;
@@ -973,9 +985,11 @@ html {
   width: 570px;
   padding-right: 0;
   box-sizing: border-box;
+  margin-bottom:30px;
 
   display: flex;
   border-radius: 16px;
+  justify-content: space-between;
 
 }
 .gift-text-container{
@@ -1004,7 +1018,7 @@ html {
   margin-right: 30px;
 }
 .gifts{
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 /* Популярные продукты */
 .popular-title{
@@ -1069,6 +1083,7 @@ html {
 .about-us-wrapper {
   background-color: #ffffff;
   padding:56px 40px;
+  border-radius: 16px;
 }
 
 .about-us-list {
@@ -1197,7 +1212,7 @@ html {
 }
 .delivery-title{
   margin:0;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   text-align: left;
 }
 .delivery-text-container p{
@@ -1775,9 +1790,11 @@ html {
 .ice-cream-item-link{
   display: block;
   margin:0 auto;
+  margin-bottom: 16px;
 }
 .ice-cream-item-link-img{
   border-radius: 50%;
+
 }
 .ice-cream-item-text-container{
   padding:0 40px 24px 40px;
@@ -1806,6 +1823,7 @@ html {
 .ice-cream-item-price-button-container{
   display:flex;
   justify-content: space-between;
+  align-items: center;
 }
 .pagination-list {
   display: flex;
