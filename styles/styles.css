@@ -64,7 +64,12 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-
+.bluebackground{
+  background-color: rgb(105, 169, 255 );
+}
+.yellowbackground{
+  background-color: rgb(252, 200, 80);
+}
 .button-red {
   color: #FCFCFC;
   background-color: #FF2F64;
@@ -75,6 +80,7 @@ body {
   box-sizing: border-box;
   position: relative;
   border:0;
+  display:inline-block;
 }
 .button-red:hover{
   outline: 4px solid #FF2F64;
@@ -85,7 +91,6 @@ body {
   background-color: #FEAFC3;
   outline: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  border: 4px solid #FEAFC3;
   color:#FCFCFC;
 }
 .button-red:focus{
@@ -191,7 +196,7 @@ body {
   color:#2D3440;
   box-sizing: border-box;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1150,6 +1155,7 @@ html {
   padding:32px 235px 32px 32px;
   box-sizing: border-box;
   border-radius: 16px;
+  background-color: rgb(255,255,255);
 }
 
 .new-in-blog-title {
@@ -1165,6 +1171,7 @@ html {
   box-sizing: border-box;
   padding:6px;
   border-radius: 16px;
+  min-height: 224px;
 }
 
 .subscribe-form-wrapper {
@@ -1172,6 +1179,7 @@ html {
   min-height: 100%;
   padding:26px;
   box-sizing: border-box;
+  border-radius: 16px;
 }
 .subscribe-form-text{
   margin:0 0 42px 0;
@@ -1187,7 +1195,10 @@ html {
   flex-grow: 1;
   margin-right: 18px;
 }
-
+.subscribe-form-form button{
+  font-family: 'Inter', sans-serif;
+  height: 44px;
+}
 /* Доставка на дом  */
 .delivery {
   display: flex;
@@ -1197,6 +1208,7 @@ html {
   background-repeat: no-repeat;
   box-sizing: border-box;
   border-radius: 16px;
+  background-color: rgb(248,248,248);
 }
 
 .delivery-form-container label {
@@ -1206,8 +1218,9 @@ html {
 }
 
 .delivery-text-container {
-  margin-right: 150px;
+  margin-right: 130px;
   align-self:center;
+  margin-top:5px;
 
 }
 .delivery-title{
@@ -1228,6 +1241,11 @@ html {
   min-height: 406px;
   padding:40px;
   box-sizing: border-box;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+.delivery-form-container button{
+  font-family: 'Inter' sans-serif;
 }
 .delivery-help-link{
   display: flex;
@@ -1288,6 +1306,7 @@ html {
   padding: 64px;
   box-sizing: border-box;
   border-radius: 16px;
+  background-color: rgb(236,226,225);
 }
 
 .contact-container {
@@ -1347,24 +1366,18 @@ html {
   padding-bottom: 57px;
 }
 
-.socials-footer {
-  margin-left: 4px;
-  margin-right: auto;
-}
-
 .copyright {
-  margin-right: 14px;
-  margin-left: 100px;
-  width: 293px;
+  margin-right: 13px;
+  margin-left: auto;
+  width: 193px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
 }
 .socials-footer{
   width:200px;
   margin-left:4px;
-  margin-right: 203px;
+  margin-right: 227px;
 }
 .footer-link {
   font-weight: 400;
@@ -1394,6 +1407,7 @@ html {
 }
 .logo-link{
   display: block;
+  margin-bottom: 10px;
 }
 .footer-link-item-special{
   position: relative;
@@ -1408,6 +1422,10 @@ html {
   width: 16px;
   height: 16px;
   left:-24px;
+  top:2px;
+}
+.copyright a{
+  text-decoration: underline;
 }
 /* Модальное окно */
 
@@ -1467,12 +1485,19 @@ html {
   border:1px solid rgba(185, 185, 185, 1);
   border-radius: 4px;
   color:#B9B9B9;
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: 'Inter',sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 32px;
+  padding:10px;
+}
+.textarea::placeholder{
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color:#B9B9B9;
 }
 .modal-button{
   align-self:flex-end;
@@ -1532,7 +1557,12 @@ html {
   line-height: 20px;
   margin-bottom: 44px;
 }
-
+.ice-cream-filter-sort-container select{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
 .sort-submite-button {
   font-size: 14px;
 }
@@ -1610,14 +1640,14 @@ html {
   border-radius: 20px;
 }
 .icecream-filter-price-range-line{
-  border: 2px solid rgba(86,92,102,0.3);
+  border: 1px solid rgba(86,92,102,0.3);
   width:164px;
   border-radius: 2px;
   position: relative;
 }
 .icecream-filter-price-range-line-actually-price{
   position: absolute;
-  border: 2px solid rgba(86,92,102,1);
+  border: 1px solid rgba(86,92,102,1);
   top:-2px;
   left:32px;
 }
@@ -1683,7 +1713,7 @@ html {
   content: "";
   position: absolute;
   top: 3.5px;
-  left:3.5px;
+  left:4px;
   border:3px solid;
   border-color: inherit;
   border-radius: 50%;
@@ -1695,6 +1725,7 @@ html {
 .icecream-filter-control-input:disabled + .icecream-filter-control-mark{
   border: 1.33333px solid rgba(45,52,64,0.4);
 }
+
 
 .icecream-filter-filler-checkbox-legend{
   margin-left:16px;
@@ -1723,6 +1754,11 @@ html {
   background-image: url(../images/element/union-grey.svg);
   border:0;
 }
+.icecream-filter-control-input:focus + .icecream-filter-control-mark{
+
+  outline: 2px solid rgba(45,52,64,0.4);
+}
+
 .sort-submite-button-position{
   align-self: flex-end;
   width:185px;
@@ -1758,6 +1794,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  padding: 41px 0;
 
   display: flex;
   align-items: center;
@@ -1779,7 +1816,7 @@ html {
   grid-template-columns: repeat(4, 270px);
   column-gap: 30px;
   row-gap: 40px;
-  margin-bottom: 16px;;
+  margin-bottom: 16px;
 }
 .ice-cream-item{
   display:flex;
@@ -1788,9 +1825,10 @@ html {
   position: relative;
 }
 .ice-cream-item-link{
-  display: block;
+
   margin:0 auto;
   margin-bottom: 16px;
+  display:flex;
 }
 .ice-cream-item-link-img{
   border-radius: 50%;
@@ -1835,9 +1873,11 @@ html {
 }
 .pagination-arrow-left{
   margin-right: 8px;
+  display: flex;
 }
 .pagination-arrow-right{
   margin-left: 8px;
+  display: flex;
 }
 .pagination-link:hover{
   background: rgba(252, 252, 252, 0.5);
@@ -1860,6 +1900,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.pagination-link-arrow{
+  width:16px;
+  height:16px;
+  align-self:center;
 }
 .ice-cream-section{
   margin-bottom: 40px;
