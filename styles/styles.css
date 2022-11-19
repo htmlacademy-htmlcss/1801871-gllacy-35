@@ -562,14 +562,14 @@ html {
 .popover-cart-list-item{
   display:grid;
   grid-template-columns: 46px 148px 109px;
-  grid-template-rows: 23px min-content;
+  grid-template-rows: min-content min-content;
   column-gap: 16px;
   margin-bottom: 24px;
 }
 .popover-cart-list-item:last-child{
   margin-bottom: 32px;
 }
-.opover-cart-list-item-link{
+.popover-cart-list-item-link{
   grid-column:1/2;
   grid-row: 1/3;
 }
