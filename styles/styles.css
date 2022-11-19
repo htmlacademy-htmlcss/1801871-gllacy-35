@@ -64,7 +64,12 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-
+.bluebackground{
+  background-color: rgb(105, 169, 255 );
+}
+.yellowbackground{
+  background-color: rgb(252, 200, 80);
+}
 .button-red {
   color: #FCFCFC;
   background-color: #FF2F64;
@@ -191,7 +196,7 @@ body {
   color:#2D3440;
   box-sizing: border-box;
 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1150,6 +1155,7 @@ html {
   padding:32px 235px 32px 32px;
   box-sizing: border-box;
   border-radius: 16px;
+  background-color: rgb(255,255,255);
 }
 
 .new-in-blog-title {
@@ -1202,6 +1208,7 @@ html {
   background-repeat: no-repeat;
   box-sizing: border-box;
   border-radius: 16px;
+  background-color: rgb(248,248,248);
 }
 
 .delivery-form-container label {
@@ -1299,6 +1306,7 @@ html {
   padding: 64px;
   box-sizing: border-box;
   border-radius: 16px;
+  background-color: rgb(236,226,225);
 }
 
 .contact-container {
@@ -1477,12 +1485,19 @@ html {
   border:1px solid rgba(185, 185, 185, 1);
   border-radius: 4px;
   color:#B9B9B9;
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: 'Inter',sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 32px;
+  padding:10px;
+}
+.textarea::placeholder{
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color:#B9B9B9;
 }
 .modal-button{
   align-self:flex-end;
@@ -1711,6 +1726,7 @@ html {
   border: 1.33333px solid rgba(45,52,64,0.4);
 }
 
+
 .icecream-filter-filler-checkbox-legend{
   margin-left:16px;
   margin-bottom:8px;
@@ -1738,6 +1754,11 @@ html {
   background-image: url(../images/element/union-grey.svg);
   border:0;
 }
+.icecream-filter-control-input:focus + .icecream-filter-control-mark{
+
+  outline: 2px solid rgba(45,52,64,0.4);
+}
+
 .sort-submite-button-position{
   align-self: flex-end;
   width:185px;
