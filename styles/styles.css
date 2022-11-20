@@ -1300,6 +1300,14 @@ html {
   display: block;
   margin:0 auto;
 }
+.delivery-help-link:hover .delivery-help-img{
+outline: 2px solid rgba(185,185,185,0.3);
+border-radius: 50%;
+}
+.delivery-help-link:focus .delivery-help-img{
+  outline: 2px solid rgba(185,185,185,0.6);
+  border-radius: 50%;
+  }
 .delivery-help-link-date:hover + .tool-tip-text-date{
   display: inline-block;
 }
