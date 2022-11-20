@@ -1300,8 +1300,14 @@ html {
   display: block;
   margin:0 auto;
 }
-.tool-tip-text{
+.delivery-help-link-date:hover + .tool-tip-text-date{
   display: inline-block;
+}
+.delivery-help-link-adress:hover + .tool-tip-text-adress{
+  display: inline-block;
+}
+.tool-tip-text{
+  display: none;
   position: absolute;
   background-color:#FCFCFC;
   box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
@@ -1326,6 +1332,10 @@ html {
   left:-7px;
   z-index:2;
   background-color: #FCFCFC;
+}
+.tool-tip-text-adress{
+  left: 87px;
+
 }
 /* Контакты */
 .contact {
@@ -1690,6 +1700,19 @@ html {
   padding:0;
   box-sizing: border-box;
   top:-8px;
+}
+.price-range-button:hover{
+  border: 6px solid #FCFCFC;
+  background-color: rgb(45, 52, 64);
+}
+.price-range-button:active{
+  border: 6px solid rgb(45, 52, 64);
+  background-color: rgb(45, 52, 64);
+}
+.price-range-button:focus{
+  border: 6px solid #FCFCFC;
+  background-color: rgb(45, 52, 64);
+  outline: 2px solid rgb(45, 52, 64);
 }
 .price-range-button-left{
   left: -8px;
