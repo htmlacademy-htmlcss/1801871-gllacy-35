@@ -1267,6 +1267,7 @@ html {
 .delivery-date-label-help{
   margin-bottom: 8px;
   display: flex;
+  position: relative;
 }
 .delivery-date-input{
   max-width: 117px;
@@ -1289,7 +1290,9 @@ html {
 .delivery-address-label-help{
   margin-bottom: 8px;
   display: flex;
+  position: relative;
 }
+
 .delivery-address-input{
   width:100%;
 }
@@ -1297,7 +1300,33 @@ html {
   display: block;
   margin:0 auto;
 }
-
+.tool-tip-text{
+  display: inline-block;
+  position: absolute;
+  background-color:#FCFCFC;
+  box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
+  border: 1px solid rgb(185,185,185);
+  border-radius: 1px;
+  padding:10px 8px;
+  max-width: 162px;
+  right: -100%;
+  margin-right: -16px;
+  top:-100%;
+}
+.tool-tip-text::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width:10px;
+  height:10px;
+  border-top: 1px solid rgb(185,185,185);
+  border-right: 1px solid rgb(185,185,185);
+  transform: rotate(-135deg);
+  top: 21px;
+  left:-7px;
+  z-index:2;
+  background-color: #FCFCFC;
+}
 /* Контакты */
 .contact {
   background-image: url('../images/background/background-contacts.jpg');
